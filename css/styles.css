@@ -1,0 +1,391 @@
+::-webkit-scrollbar {
+display: none;
+}
+
+
+hr{
+  width: 50%;
+  margin: center;
+  border-color: black;
+
+}
+#althr{
+  color: black;
+
+}
+
+#palt{
+  color: white;
+}
+
+.container{
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+.container1{
+  padding-left: 300px;
+  padding-right: 300px;
+
+}
+.container2{
+  padding-left: 320px;
+  word-wrap: normal;
+
+
+}
+.imgcontainer{
+
+}
+h1, h2, h3, h4, h5, h6{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  font-size: 20px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (min-width: 300px) {
+  p {
+    width: 85%;
+    padding: 0; }
+.responsive {
+  width: 70%;
+  height: auto;
+}
+
+/*  REGULAR SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+  justify-content: center;
+}
+/* ALT SECTIONS */
+#section {
+  clear: both;
+	padding-left: 200px;
+  padding-right: 200px;
+	margin: 0px;
+    justify-content: center;
+}
+
+#section2 {
+  clear: both;
+	padding-left: 300px;
+  padding-right: 300px;
+	margin: 0px;
+    justify-content: center;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74%;
+}
+.span_2_of_4 {
+	width: 49.75%;
+}
+.span_1_of_4 {
+	width: 24.62%;
+}
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+
+/*  GRID OF SIX  */
+
+.span_1_of_6 {
+  width: 16%;
+}
+/*artist spans because i need specially tailored spans specific to the artist pages*/
+.span_art_1{
+  width:16%;
+
+}
+.span_art_2{
+  width:64%;
+
+
+
+}
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4, .span_1_of_6 { width: 100%; }
+}
+
+
+.hvr-grow {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+}
+
+#fix{
+  padding-right: 10px;
+}
+
+.about{
+  justify-content: center;
+  padding-left: 200px;
+
+  padding-right: 200px;
+}
+
+/* flexbox */
+
+.flex-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-container > div {
+  width: 20%;
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+}
+
+.imgbg{
+  background-color: black;
+}
+.imgbg:hover{
+  background-color: white;
+}
+
+.imgbgalt{
+  background-color: rgba(255,0,0,1);
+}
+
+
+/*recycled topnav for now to make the site functional, ideally go back and make a new one */
+
+.topnav {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.topnavalt a {
+  color: #000;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: #333;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 200px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+.fix{
+  width: auto;
+  height: auto;
+  float: center;
+}
+@media screen and (max-width: 5000px){
+  iframe{
+    float: center;
+    justify-content: center;
+  }
+  .fix{
+    width:820px;
+    height:380px;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .fix{
+  width: 300px;
+  height: 380px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .fix{
+  width: 300px;
+  height: 380px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .about{
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .fix{
+  width: 300px;
+  height: 380px;
+  }
+  p{
+    font-size: 10px;
+  }
+  .about{
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.h1alt{
+  color: black;
+}
+
+
+@media screen and (max-width: 426px){
+.container1{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#section{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.span_1_of_6{
+  width:100%;
+}
+}
+#left{
+  float:left;
+}
+.part{
+  text-align: left;
+}
+
+.spotifypad{
+  padding-left: 4px;
+}
